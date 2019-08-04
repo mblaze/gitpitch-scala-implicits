@@ -23,8 +23,7 @@
 - implicit parameters
 - ~~views (implicit conversions)~~
 - ~~implicit classes~~
-
-**Implicit Resolution**
+- **Implicit Resolution**
 
 ---
 
@@ -49,3 +48,5 @@ def listToJson[A](as: List[A])(implicit aToJson: ToJson[A]): String =
 listToJson(List(1, 2, 3, 4))
 listToJson(List("I", "really", "like", "cats"))
 ```
+
+Try [it](https://scastie.scala-lang.org/7XcIi4vIRGmzz3KZO8w3KQ) out!
